@@ -1,0 +1,50 @@
+body {
+    margin: 0 0 0 0;
+    font-family: "Raleway", sans-serif;
+    color: #eee;
+    max-height: 100vh;
+    background-color: white;
+    
+    // background-image: linear-gradient(
+    //     to right,
+    //     #a5afd7,
+    //     #8357c5);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container  {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-box {
+    position: absolute;
+    /* put the box in the middle */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: inherit;
+    color: #2e104d;
+}
+
+.large-title {
+    font-size: 38px;
+    letter-spacing: 10px;
+}
+
+.not-found {
+    margin-bottom: 45px;
+}
+
+.text-box span {
+    font-weight: 700;
+}
+
+// font-size: 78px;
+// font-weight: 400;
+// letter-spacing: 10px;

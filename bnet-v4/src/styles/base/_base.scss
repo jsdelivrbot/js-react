@@ -1,0 +1,32 @@
+html {
+    color: $font-light;
+    font-family: $font-family;
+    a {
+        text-decoration: none;
+    }
+    a:visited {
+        color: inherit;
+    }
+}
+
+body {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    flex-basis: 800px;
+}
+
+// .main > *, .header {
+//     margin: 4px;
+//     padding: 5px;
+//     border-radius: 7px;
+// }
+
+.bg-wp {
+    background-size: cover;
+    background-position: center;
+}

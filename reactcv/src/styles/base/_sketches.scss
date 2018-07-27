@@ -1,0 +1,13 @@
+.sketches {
+    display: flex;
+    flex-direction: column;
+}
+
+.sketch-links {
+    display: inherit;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 25%;
+    flex-wrap: wrap;
+    margin: 50px;
+}

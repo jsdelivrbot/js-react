@@ -1,0 +1,8 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $bg-light;
+    // flex-basis: 100px;
+    min-height: 12vh;
+}

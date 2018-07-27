@@ -1,0 +1,114 @@
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: all .2s;
+    position: relative;
+
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background-image: linear-gradient(
+        to right,
+        rgba(126, 213, 111, 0.8),
+        #28b485);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2); 
+    color: white;
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.btn-purple {
+    background-color: #501c85;
+    color: #eee;
+}
+
+.btn-white {
+    background-color: white;
+    color: #2e104d;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: white;
+}
+
+.btn-purple::after {
+    background-color: #501c85;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.button-animated-1 {
+    animation: moveInBottom .5s ease-out .2s;
+    animation-fill-mode: backwards;
+}
+
+.button-animated-2 {
+    animation: moveInBottom .5s ease-out .4s;
+    animation-fill-mode: backwards;
+}
+
+.button-animated-3 {
+    animation: moveInBottom .5s ease-out .6s;
+    animation-fill-mode: backwards;
+}
+
+.button-animated-4 {
+    animation: moveInBottom .5s ease-out .8s;
+    animation-fill-mode: backwards;
+}
+
+.button-animated-5 {
+    animation: moveInBottom .5s ease-out 1s;
+    animation-fill-mode: backwards;
+}
+
+.btn-delete {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all .2s;
+    position: relative;
+
+    font-size: 20px;
+    letter-spacing: 5px;
+    
+    background: linear-gradient(
+    to right,
+    orange,
+    red);
+}
+
+.btn-delete:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2); 
+    color: white;
+}

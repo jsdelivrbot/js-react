@@ -1,0 +1,35 @@
+
+.hero {
+    flex-basis: 60%;
+    flex-grow: 4;
+    min-height: 83vh;
+    background: $bg-light;
+  }
+
+.dragonHealth {
+    width: 100%;
+    margin-top: 50px;
+    // padding: 15px;
+    height: 35px;
+    background: #f6482f;
+    color: white;
+    border-radius: 5px;
+    transition: width 300ms;
+}
+
+.heroHealth {
+    width: 100%;
+    margin-top: 25px;
+    // padding: 15px;
+    height: 35px;
+    background: #03a34c;
+    color: white;
+    border-radius: 5px;
+    transition: width 300ms;
+}
+
+.container {
+  max-width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}

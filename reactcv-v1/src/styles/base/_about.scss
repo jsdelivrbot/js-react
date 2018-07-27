@@ -1,0 +1,162 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    align-items: center;
+}
+
+.skill-cards-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    max-width: 65%;
+}
+
+.skill-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 5px;
+    color: #2e104d;
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: 31%;
+    height: 50vh;
+    margin: 1%;
+    margin-bottom: 20px;
+
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+
+    position: relative;
+
+    animation: moveInLeft .5s ease-out .3s;
+    animation-fill-mode: backwards;
+    transition: all .5s ease-in-out;
+}
+
+.skill-cards::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+    transition: all .4s;
+}
+
+.skill-cards:hover::after {
+    background: white;
+    transform: scaleX(1.2) scaleY(1.3);
+    opacity: 0;
+}
+
+.skill-cards:nth-child(2n) {
+    background-color: #944fda;
+    color: white;
+}
+
+.skill-cards:nth-child(2n+1) {
+    background-color: #8357c5;
+    color: white;
+}
+
+.skill-cards:hover {
+    background: linear-gradient(
+        to right,
+        rgba(126, 213, 111, 0.8),
+        rgb(40, 180, 133));
+    transform: translateY(-3px);
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.skill-cards:nth-child(2n+1):hover {
+}
+
+.skill-cards:nth-child(2n):hover {
+}
+
+.card-header {
+    font-size: 26px;
+    color: gold;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+.card-content {
+    text-align: left;
+    font-size: 14px;
+}
+
+.html {
+    margin-left: 5px;
+}
+
+.html div:nth-of-type(2),.html div:nth-of-type(6),.html div:nth-of-type(7),.html div:nth-of-type(11) {
+    text-indent: 10px;
+}
+
+.html div:nth-of-type(3),.html div:nth-of-type(4),.html div:nth-of-type(5),.html div:nth-of-type(8),.html div:nth-of-type(9),.html div:nth-of-type(10) {
+    text-indent: 20px;
+}
+
+.php {
+    margin-left: 5px;
+}
+
+.php div:nth-of-type(2) {
+    text-indent: 10px;
+}
+
+.card-rating {
+    color: gold;
+    font-size: 22px;
+}
+
+// .left-over {
+//     display: flex;
+//     flex-direction: column;
+//     // justify-content: space-between;
+//     color: white;
+//     border-radius: 5px;
+//     background-color: #2e104d;
+
+//     width: 25%;
+//     height: auto;
+//     margin-bottom: 30px;
+
+//     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+
+//     animation: moveInRight .5s ease-out .3s;
+//     animation-fill-mode: backwards;
+//     transition: all .5s ease-in-out;
+// }
+
+.modal-container {
+    text-align: center;
+    animation: moveInRight .5s ease-out .3s;
+    animation-fill-mode: backwards;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.modal-container p {
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    padding: 5px;
+}

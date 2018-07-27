@@ -1,0 +1,37 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    // background: $bg-color;
+    // flex-basis: 100px;
+    min-height: 10vh;
+    border-bottom: 1px solid $border-color;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 2;
+    max-width: 45%;
+}
+
+.nav-left h1 {
+    font-weight: 500;
+}
+
+.nav-left h1:hover {
+    color: white;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    max-width: 20%;
+    align-items: center;
+}
+
+.nav-right div {
+    display: flex;
+    flex-direction: row;
+}

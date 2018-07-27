@@ -1,0 +1,54 @@
+.hero {
+    flex-basis: 80%;
+    flex-grow: 4;
+    min-height: 90vh;
+    // background: $bg-color;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+.content-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  border: 1px solid $border-color;
+}
+
+.content-box div {
+  border: 1px solid $border-color;
+  margin: 10px;
+  height: 250px;
+}
+
+.content-box-video {
+  width: 45%;
+}
+
+.content-box-small {
+  width: 20%;
+}
+
+.footer {
+  border: 1px solid $border-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-play {
+  display: inherit;
+  flex-direction: column;
+}
+
+.header-play {
+  border: 1px solid $border-color;
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  width: 250px;
+  height: 85px;
+  background: $hover-color;
+}
